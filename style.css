@@ -1,0 +1,92 @@
+body{
+  background: #44A9F2;
+  font-family: 'Nunito', sans-serif;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5em;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Nunito', sans-serif;
+  font-weight:700;
+}
+h2{
+  font-size: 2rem;
+}
+
+#container{
+  width:100%;
+  margin-top:100px;
+}
+#ecran{
+  width:500px;
+  min-height:600px;
+  background: #E9EAEB;
+  margin:auto;
+  border:20px solid #050300;
+  border-radius: 20px;
+  padding:40px;
+}
+#ecran-img{
+  background: #FFFFFF;
+  padding:30px;
+  height:100px;
+  margin:20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+#types{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Les classes */
+.pkmn-number{text-align: center;}
+.img-ball{margin:0 5px;}
+.pkmn-name{
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+.pkmn-name i{
+  padding: 0 20px;
+  cursor: pointer;
+}
+.pkmn-description{}
+
+/* LES TYPES */
+.plante,.feu,.eau,.electrik,.poison,.glace,.psy,.insecte,.tenebres,.combat,.normal,.fee,.dragon,.spectre,.vol,.acier,.sol,.roche{
+  width:80px;
+  padding:10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin:5px;
+  text-transform: capitalize;
+  color:#FFFFFF;
+  display: block;
+}
+/*
+.plante,.feu,.eau,.electrik,.poison,.glace,.psy,.insecte,.tenebres,.combat,.normal,.fee,.dragon,.spectre,.vol,.acier,.sol,.roche{
+  color:#000000;
+}
+*/
+.null{display: none;}
+.plante{background:#1DF24C;}
+.feu{background:#E82722;}
+.eau{background:#389BE8;}
+.electrik{background:#E8BC3B;}
+.poison{background: #8E18F7;}
+.glace{background:#0FE8DE;}
+.psy{background:#AB09E8;}
+.insecte{background:#BEE838;}
+.tenebres{background:#2E2C2E;}
+.combat{background:#913931;}
+.normal{background:#BEBEC4;}
+.fee{background:#FC7FBA;}
+.dragon{background:#6D07F7;}
+.spectre{background:#350378;}
+.vol{background:#A29BFC;}
+.acier{background:#6E6767;}
+.sol{background:#6B5121;}
+.roche{background:#4A3F2B;}
