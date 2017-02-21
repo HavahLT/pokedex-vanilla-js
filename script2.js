@@ -4,19 +4,19 @@ var fRight = document.querySelector("#f-right");
 // initialisation de i
 var i = 0;
 // recupt emplacement des elements du pokedex
-var emplacementNumero = document.querySelector(".pkmn-number");
-var emplacementName = document.querySelector(".pkmn-name .name");
+var emplacementNumero = document.querySelector("#pkmn-number");
+var emplacementName = document.querySelector("#pkmn-name .name");
 var emplacementImgEtShiny = document.querySelector("#ecran-img");
 var emplacementTypes1et2 = document.querySelector("#types");
-var emplacementDescription = document.querySelector(".description");
+var emplacementDescription = document.querySelector("#description");
 // creation des elements HTML pour insérer les infos
-var pkmnNumero = document.createElement("span");
+var pkmnNumero = document.createElement("p");
 var pkmnName = document.createElement('span');
 var pkmnImg = document.createElement('img');
 var pkmnShiny = document.createElement('img');
 var pkmnType1 = document.createElement("span");
 var pkmnType2 = document.createElement("span");
-var pkmnDescription = document.createElement('span');
+var pkmnDescription = document.createElement('p');
 // fonction de recupération des infos du tableau + ajout des balises crées sur le index.html
 function recuperationDonnees(i){
 pkmnNumero.textContent = pkmnDonnees[i].numero;
@@ -38,7 +38,7 @@ pkmnDescription.textContent = pkmnDonnees[i].description;
 }
 recuperationDonnees(i);
 
-if(i > pkmnDonnees.length){
+if(i > pkmnDonnees[i].length - 1){
   i = 0;
 }
 

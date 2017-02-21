@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5{
 h2{
   font-size: 2rem;
 }
-
 #container{
   width:100%;
   margin-top:100px;
@@ -27,13 +26,28 @@ h2{
   border-radius: 20px;
   padding:40px;
 }
+#pkmn-number{
+  text-align: center;
+}
+#pkmn-name{
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+#pkmn-name i{
+  padding: 0 20px;
+  cursor: pointer;
+}
 #ecran-img{
   background: #FFFFFF;
   padding:30px;
-  height:100px;
   margin:20px 0;
   display: flex;
   justify-content: space-around;
+}
+#ecran-img img{
+  height: 60px;
+  width:auto;
 }
 #types{
   display: flex;
@@ -41,19 +55,10 @@ h2{
   text-align: center;
   margin-bottom: 10px;
 }
+#description{}
+
 /* Les classes */
-.pkmn-number{text-align: center;}
 .img-ball{margin:0 5px;}
-.pkmn-name{
-  text-align:center;
-  display: flex;
-  justify-content: center;
-}
-.pkmn-name i{
-  padding: 0 20px;
-  cursor: pointer;
-}
-.pkmn-description{}
 
 /* LES TYPES */
 .plante,.feu,.eau,.electrik,.poison,.glace,.psy,.insecte,.tenebres,.combat,.normal,.fee,.dragon,.spectre,.vol,.acier,.sol,.roche{
@@ -66,11 +71,6 @@ h2{
   color:#FFFFFF;
   display: block;
 }
-/*
-.plante,.feu,.eau,.electrik,.poison,.glace,.psy,.insecte,.tenebres,.combat,.normal,.fee,.dragon,.spectre,.vol,.acier,.sol,.roche{
-  color:#000000;
-}
-*/
 .null{display: none;}
 .plante{background:#1DF24C;}
 .feu{background:#E82722;}
